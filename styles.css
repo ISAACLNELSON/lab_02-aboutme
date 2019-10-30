@@ -1,17 +1,28 @@
 h1{
-    color: blue;
-    border: blue 2px solid;
+    color: rgb(40, 40, 49);
+    border-left: rgb(93, 93, 133) 10px solid;
+    border-bottom: rgb(93, 93, 133) 3px solid;
     padding: 1%;
-    background-color: rgb(184, 241, 129);
+    background-color: rgb(188, 188, 206);
     border-radius: 4%;
     position: absolute;
-    top: 20px; left: 10%;
+    top: 0px; left: 33%;
 }
 p{
-    background-color: darkcyan;
+    background-color: rgb(188, 188, 206);
+    color: rgb(40, 40, 49);
     width: 70%;
-    font-size: x-large;
+    font-size: large;
+    padding: 15px;
+    border-left: rgb(93, 93, 133) 14px solid;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 50%;
     position: absolute;
-    top: 90px; left: auto;
+    top: 15%;left: 20%;
+    border-bottom: rgb(93, 93, 133) 4px solid;
 
+}
+body {
+    width: 90%;
+    background-color: rgb(76, 194, 194);
 }
