@@ -1,28 +1,102 @@
-h1{
-    color: rgb(40, 40, 49);
-    border-left: rgb(93, 93, 133) 10px solid;
-    border-bottom: rgb(93, 93, 133) 3px solid;
-    padding: 1%;
-    background-color: rgb(188, 188, 206);
-    border-radius: 4%;
-    position: absolute;
-    top: 0px; left: 33%;
+header {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 1.5%;
+    padding: 9px;
+    
+    background-color: rgb(126, 165, 216);
 }
-p{
-    background-color: rgb(188, 188, 206);
-    color: rgb(40, 40, 49);
-    width: 70%;
-    font-size: large;
-    padding: 15px;
-    border-left: rgb(93, 93, 133) 14px solid;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    width: 50%;
-    position: absolute;
-    top: 15%;left: 20%;
-    border-bottom: rgb(93, 93, 133) 4px solid;
 
+main {
+    background-color: rgb(126, 165, 216);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    /* width: 40%; */
+    /* padding: 1%; */
+    margin: 1.5%;
+    display: inline-block;
+    border: rgb(81, 81, 155) solid 4px;
 }
-body {
-    width: 90%;
-    background-color: rgb(76, 194, 194);
+#intro {
+    background-color: rgb(215, 225, 238);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    width: 40%;
+    padding: 1%;
+    margin: 0%;
+    border-bottom:rgb(81, 81, 155) solid 6px ;
+    border-right: rgb(81, 81, 155) solid 6px;
+    float: left;
 }
+#Alex {
+    float: right;
+    margin: 1%;
+    border: rgb(81, 81, 155) solid 8px;
+    /* position: absolute;
+    top: 120px; left: 620px; */
+  }
+
+#workAndSchool p {
+    background-color: rgb(126, 165, 216);
+    font-family: Arial, Helvetica, sans-serif;
+    /* padding: 1%;
+    margin: 1.5%; */
+    float: inline-end;
+    width: 20%;
+    
+}  
+#workAndSchool ul{
+    background-color: rgb(126, 165, 216);
+    font-family: Arial, Helvetica, sans-serif;
+    /* padding: 1%;
+    margin: 1.5%; */
+    float: inline-end;
+    width: 20%;
+    
+}
+
+#topTen {
+    background-color: rgb(126, 165, 216);
+    font-family: Arial, Helvetica, sans-serif;
+    /* float: left; */
+    margin: 1.5%;
+    padding: 1%;
+    display: inline-table;
+    width: 25%;
+    font-size: xx-large;
+    text-align: center;
+    border: rgb(81, 81, 155) solid 4px;
+
+    
+}
+#topTen p {
+    background-color: rgb(207, 207, 221);
+    margin: 1.5%;
+    padding: 1.5%;
+}
+#topTen li {
+    font-size: x-large;
+    text-align: center;
+    display: inline-block;
+    background-color: rgb(207, 207, 221);
+    margin: 15%;
+    padding: 10%;
+}
+#placePics {
+    border: rgb(81, 81, 155) solid 4px;
+    margin-top: 12%;
+    margin-right: 26%;
+    float: right;
+    background-color: rgb(126, 165, 216);
+    width: 40%;
+}
+#placePics img {
+    /* padding-left: 20%; */
+    margin: 0%;
+    width: auto;
+    padding-right: 30%;
+    border: rgb(81, 81, 155) solid 4px;
+}
+/* span {
+    background-color: chocolate;
+} */
