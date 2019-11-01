@@ -14,7 +14,6 @@ function determineGreeting() {
     } else { properGreeting = 'Welcome ' }
 }
 
-
 //Quiz Code 
 var name = prompt('Welcome, what is your name?');
 var ready = prompt('Have you read my biography yet? \n Yes or No');
@@ -99,6 +98,7 @@ function testing() {
     var random = Math.ceil(Math.random() * (10 - 1) + 1);
     var Q5array = [];
     while (guessCount > 0) {
+
     var newQ5 = parseInt(q5, 10);
     console.log('newQ5 = ' + newQ5 + ' \n q5 = ' + q5 + 'random = ' + random + 'guessCount = '+ guessCount);
     
@@ -109,6 +109,7 @@ function testing() {
             score += 1;
             break;
         } else {
+
 
 
             if (newQ5 < random) {
@@ -128,6 +129,9 @@ function testing() {
             alert('sorry, you ran out of guesses...')
         }
 
+     
+    }
+
             console.log('array = ' + Q5array.length);
         }
 
@@ -138,6 +142,7 @@ function testing() {
         var foodGuesses = 5;
 
         var foodFlag = false;
+
 
         var favFoods = ['pizza', 'ramen', 'mochi'];
         while (foodFlag === false && foodGuesses > 0) {
