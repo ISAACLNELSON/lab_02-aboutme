@@ -1,102 +1,185 @@
 header {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    margin: 1.5%;
-    padding: 9px;
+    /* margin: 1.5%; */
+    position: absolute;
+    top: 0%;left: 0%;
+    width: 100%;
+    height: 13%;
+    padding: 2px;
+    border-bottom: rgb(81, 81, 155) solid 3px;;
+    
+    
     
     background-color: rgb(126, 165, 216);
 }
-
+header h1 {
+    font-size: x-large;
+    background-color: rgb(215, 225, 238);
+    border: rgb(81, 81, 155) solid 3px;
+   
+    padding: 1px;
+    margin: 2px;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+header nav {
+    width: 100%;
+    border: rgb(81, 81, 155) solid 3px;
+    background-color: rgb(77, 91, 109);
+    height: 40%;
+    
+}
+header nav ul {
+    float: left;
+    
+}
+header nav ul li {
+    background-color: rgb(215, 225, 238);
+    display: inline-block;
+    text-decoration: none;
+    /* margin-left: 10%; */
+    /* padding-bottom: 19%; */
+    border: rgb(81, 81, 155) solid 3px;
+    position: relative;
+    top: -11px; left: -30px;
+    
+    
+}
 main {
     background-color: rgb(126, 165, 216);
     font-family: Arial, Helvetica, sans-serif;
-    font-size: large;
     /* width: 40%; */
     /* padding: 1%; */
-    margin: 1.5%;
+    margin-top: 8%;
+    margin-left: 3%;
+    margin-right: 3%;
     display: inline-block;
-    border: rgb(81, 81, 155) solid 4px;
+    border: rgb(81, 81, 155) solid 3px;
+}
+#aboutMeBox {
+    background-color: rgb(215, 225, 238);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    width: 30%;
+    padding: 1%;
+    margin: 0%;
+    border-bottom:rgb(81, 81, 155) solid 3px ;
+    border-right: rgb(81, 81, 155) solid 3px;
+    float: left;
+}
+}
+#introTitle {
+    
+    border-right: rgb(81, 81, 155) solid 3px;
 }
 #intro {
     background-color: rgb(215, 225, 238);
     font-family: Arial, Helvetica, sans-serif;
-    font-size: large;
-    width: 40%;
-    padding: 1%;
-    margin: 0%;
-    border-bottom:rgb(81, 81, 155) solid 6px ;
-    border-right: rgb(81, 81, 155) solid 6px;
-    float: left;
+    font-size: small;
+    
 }
 #Alex {
-    float: right;
-    margin: 1%;
-    border: rgb(81, 81, 155) solid 8px;
-    /* position: absolute;
-    top: 120px; left: 620px; */
+    width: fit-content;
+    margin: 2%;
+    /* margin-right: 40%; */
+    /* margin-right: 65.5%; */
+   float: right;
+    /* padding: 3px; */
+    border: rgb(81, 81, 155) solid 3px;
   }
 
-#workAndSchool p {
-    background-color: rgb(126, 165, 216);
+#workAndSchool {
+    background-color: rgb(215, 225, 238);
     font-family: Arial, Helvetica, sans-serif;
-    /* padding: 1%;
-    margin: 1.5%; */
-    float: inline-end;
-    width: 20%;
-    
+    border: rgb(81, 81, 155) solid 3px;
+    padding: 1%;
+    margin-right: 35%;
+    margin-left: 35%;
+    /* float: right; */
 }  
-#workAndSchool ul{
-    background-color: rgb(126, 165, 216);
+#workAndSchool ul li{
     font-family: Arial, Helvetica, sans-serif;
-    /* padding: 1%;
-    margin: 1.5%; */
-    float: inline-end;
-    width: 20%;
+    margin-left: 15%;
+
     
 }
+#workAndSchool h3 {
+text-align: center;
+background-color: rgb(215, 225, 238);
+font-family: Arial, Helvetica, sans-serif;
+font-size: medium;
+margin: 0%;
+padding: 5px;
 
+}
+#workAndSchool ul{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1%;
+    margin: 1.5%;
+    
+}
+#locationArticle {
+    height: 10%;
+    display: inline-block;
+    border: rgb(81, 81, 155) solid 3px;
+    background-color: rgb(77, 91, 109);
+    /* width: 60%; */
+}
 #topTen {
     background-color: rgb(126, 165, 216);
     font-family: Arial, Helvetica, sans-serif;
     /* float: left; */
     margin: 1.5%;
     padding: 1%;
-    display: inline-table;
-    width: 25%;
-    font-size: xx-large;
+    display: inline-block;
+    /* width: 3%; */
+    font-size: large;
     text-align: center;
-    border: rgb(81, 81, 155) solid 4px;
+    border: rgb(81, 81, 155) solid 3px;
 
     
 }
-#topTen p {
+#topTenTitle {
     background-color: rgb(207, 207, 221);
-    margin: 1.5%;
+    margin: 1%;
     padding: 1.5%;
+    border: rgb(81, 81, 155) solid 3px;
+
 }
 #topTen li {
-    font-size: x-large;
+    border: rgb(81, 81, 155) solid 3px;
+    font-size: medium;
     text-align: center;
-    display: inline-block;
+    /* display: inline-block; */
     background-color: rgb(207, 207, 221);
-    margin: 15%;
-    padding: 10%;
+    margin-right: 9%;
+    margin-bottom: 2%;
+    padding: 2%;
+    float: left;
+    /* width: 85px; */
 }
 #placePics {
-    border: rgb(81, 81, 155) solid 4px;
-    margin-top: 12%;
-    margin-right: 26%;
+    border: rgb(81, 81, 155) solid 3px;
+    margin-top: 10%;
+    margin-right: 35%;
     float: right;
     background-color: rgb(126, 165, 216);
-    width: 40%;
+    padding: 2%;
+    width: 38%;
 }
-#placePics img {
+img {
     /* padding-left: 20%; */
     margin: 0%;
     width: auto;
-    padding-right: 30%;
-    border: rgb(81, 81, 155) solid 4px;
+    /* padding-right: 30%; */
+    border: rgb(81, 81, 155) solid 1px;
 }
-/* span {
+/* #tokyoPic {
+
+} */
+/* #line {
+    position: absolute;
+    bottom: 6%;
     background-color: chocolate;
 } */
