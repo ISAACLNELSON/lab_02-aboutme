@@ -14,7 +14,6 @@ function determineGreeting() {
     } else { properGreeting = 'Welcome ' }
 }
 
-
 //Quiz Code 
 var name = prompt('Welcome, what is your name?');
 var ready = prompt('Have you read my biography yet? \n Yes or No');
@@ -94,10 +93,9 @@ function testing() {
 
 
     var q5 = prompt('I\'m thinking of a number between 1 and 10...\n I\'ll give you four tries \n What is it?');
-    var guessCount = 3;
+    var guessCount = 4;
     var random = Math.ceil(Math.random() * (10 - 1) + 1);
     while (guessCount > 0) {
-        guessCount--;
 
         var newQ5 = parseInt(q5, 10);
         console.log('newQ5 = ' + newQ5 + ' \n q5 = ' + q5 + 'random = ' + random);
@@ -115,8 +113,7 @@ function testing() {
         }
 
         console.log(' success!! \n newQ5 = ' + newQ5)
-
-
+        guessCount--;
     }
 
     var q6 = prompt('Try to guess one of my three favorite foods!');
