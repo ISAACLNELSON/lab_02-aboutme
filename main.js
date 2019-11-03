@@ -13,13 +13,14 @@ function determineGreeting() {
         properGreeting = 'Good morning '
     } else { properGreeting = 'Welcome ' }
 }
+console.log(properGreeting)
 
 
 //Quiz Code 
 var name = prompt('Welcome, what is your name?');
 var ready = prompt('Have you read my biography yet? \n Yes or No');
 ready = ready.toLowerCase();
-if (ready === 'yes') {
+if (ready === 'yes' || ready === 'y') {
     testing();
 }
 
@@ -99,9 +100,9 @@ function testing() {
     var random = Math.ceil(Math.random() * (10 - 1) + 1);
     var Q5array = [];
     while (guessCount > 0) {
-    var newQ5 = parseInt(q5, 10);
-    console.log('newQ5 = ' + newQ5 + ' \n q5 = ' + q5 + 'random = ' + random + 'guessCount = '+ guessCount);
-    
+        var newQ5 = parseInt(q5, 10);
+        console.log('newQ5 = ' + newQ5 + ' \n q5 = ' + q5 + 'random = ' + random + 'guessCount = ' + guessCount);
+
         if (newQ5 === random) {
             alert('YES, YOU GOT IT!');
             Q5array.push(q5);
@@ -128,44 +129,44 @@ function testing() {
             alert('sorry, you ran out of guesses...')
         }
 
-            console.log('array = ' + Q5array.length);
-        }
+        console.log('array = ' + Q5array.length);
+    }
 
-        var q6 = prompt('Try to guess one of my three favorite foods!');
-        q6 = q6.toLowerCase();
+    var q6 = prompt('Try to guess one of my three favorite foods!');
+    q6 = q6.toLowerCase();
 
-        // food guess game
-        var foodGuesses = 5;
+    // food guess game
+    var foodGuesses = 5;
 
-        var foodFlag = false;
+    var foodFlag = false;
 
-        var favFoods = ['pizza', 'ramen', 'mochi'];
-        while (foodFlag === false && foodGuesses > 0) {
-            foodGuesses--;
+    var favFoods = ['pizza', 'ramen', 'mochi'];
+    while (foodFlag === false && foodGuesses > 0) {
+        foodGuesses--;
 
-            for (var i = 0; i < favFoods.length; i++) {
-                var currentFood;
-                if (q6 === favFoods[i]) {
-                    foodFlag = true;
+        for (var i = 0; i < favFoods.length; i++) {
+            var currentFood;
+            if (q6 === favFoods[i]) {
+                foodFlag = true;
 
-                    currentFood = favFoods[i];
-                    console.log('foodFlag = ' + foodFlag)
-                }
-            } if (foodFlag === true) {
-                alert('Yup! I love ' + currentFood);
-                score += 1;
-
-            } else if (foodGuesses === 0) {
-                alert('sorry, you ran out of guesses...')
-            } else {
-                q6 = prompt('Nope, nice try though!')
+                currentFood = favFoods[i];
+                console.log('foodFlag = ' + foodFlag)
             }
+        } if (foodFlag === true) {
+            alert('Yup! I love ' + currentFood);
+            score += 1;
 
-        }
-
-        var finished = confirm('Score ' + score + '/6 \n   Correct answer   |   Your answer \n   Question 1:  No  | ' + q1 + '\n   Question 2:  Yes  | ' + q2 + '\n   Question 3:  No  | ' + q3 + '\n   Question 4:  Yes  | ' + q4 + '\n   Question 5:   ' + random + '   | ' + Q5array + '\n Food Quiz: Pizza, Ramen, and Mochi! Your final Guess was ' + q6 + '\n Press OK to retake this quiz. Press cancel to go to my page.')
-        if (finished) {
-            testing()
+        } else if (foodGuesses === 0) {
+            alert('sorry, you ran out of guesses...')
+        } else {
+            q6 = prompt('Nope, nice try though!')
         }
 
     }
+
+    var finished = confirm('Score ' + score + '/6 \n   Correct answer   |   Your answer \n   Question 1:  No  | ' + q1 + '\n   Question 2:  Yes  | ' + q2 + '\n   Question 3:  No  | ' + q3 + '\n   Question 4:  Yes  | ' + q4 + '\n   Question 5:   ' + random + '   | ' + Q5array + '\n Food Quiz: Pizza, Ramen, and Mochi! Your final Guess was ' + q6 + '\n Press OK to retake this quiz. Press cancel to go to my page.')
+    if (finished) {
+        testing()
+    }
+
+}
