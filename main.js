@@ -133,7 +133,7 @@ function testing() {
     }
 
     var q6 = prompt('Try to guess one of my three favorite foods!');
-    q6 = q6.toLowerCase();
+    
 
     // food guess game
     var foodGuesses = 5;
@@ -143,7 +143,7 @@ function testing() {
     var favFoods = ['pizza', 'ramen', 'mochi'];
     while (foodFlag === false && foodGuesses > 0) {
         foodGuesses--;
-
+    q6 = q6.toLowerCase();
         for (var i = 0; i < favFoods.length; i++) {
             var currentFood;
             if (q6 === favFoods[i]) {
